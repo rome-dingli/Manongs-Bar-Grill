@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <title>Manongs</title>
+    <style>
+        /* Optional: Add some custom styles for the carousel */
+        .carousel-item {
+            transition: opacity 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navigation Bar -->
+    <nav class="w-full p-3 px-5 border flex items-center justify-between bg-white">
+        <img src="images/logo_manongs_2018.png" class="w-40">
+        <ul class="flex items-center space-x-4">
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+            <li>
+                <a href="menu.html">Food</a>
+            </li>
+            <li>
+                <a href="#">About Us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="carousel" class="relative w-full" data-carousel="slide">
+        <div class="relative h-56 overflow-hidden md:h-96">
+            <div class="carousel-item opacity-100" data-carousel-item="active">
+                <img src="images/areas/Manongs-Alfresco03_web.jpg" class="absolute block w-full h-full object-cover" alt="Slide 1">
+            </div>
+
+            <div class="carousel-item opacity-0" data-carousel-item>
+                <img src="images/areas/Manongs-Dining01_web.jpg" class="absolute block w-full h-full object-cover" alt="Slide 2">
+            </div>
+
+            <div class="carousel-item opacity-0" data-carousel-item>
+                <img src="images/areas/Manongs-Function01_web.jpg" class="absolute block w-full h-full object-cover" alt="Slide 3">
+            </div>
+        </div>
+    </div>
+    
+    <div class="my-10 max-w-6xl mx-auto p-3">
+        <h3 class="text-3xl font-semibold">Menu</h3>
+        
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 col-span-1 gap-2.5 mt-5">
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                
+                <img src="images/foods/hotdog-sandwich.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Breakfast</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                
+                <img src="images/foods/sinuglaw.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Vegetables</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                 
+                <img src="images/foods/margarita.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Drinks</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                 
+                <img src="images/foods/halo-halo.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Desserts</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                 
+                <img src="images/foods/crispy-pork-sisig.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Sisig Corner</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-span-1 relative w-full h-56 rounded-lg overflow-hidden shadow-lg group">
+                 
+                <img src="images/foods/crispy-pata.jpg" alt="Default Image" class="w-full h-full object-cover transition-opacity duration-300">
+                <div class="absolute inset-0 bg-gray-900 w-full h-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-50"></div>
+                <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black/50">
+                    <p class="text-white text-lg font-semibold">Pork</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="my-10 max-w-6xl mx-auto p-3">
+        <h3 class="text-3xl font-semibold">Best Sellers</h3>
+        <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-2.5 mt-5">
+            <div class="col-span-1 bg-white shadow rounded">
+                <img src="images/foods/crispy-pork-sisig.jpg" alt="" class="w-full h-64 object-cover rounded-t">
+                <div class="px-2.5 my-2.5">
+                    <h6 class="font-semibold text-lg">Crispy Pork Sisig</h6>
+                    <p class="text-sm text-sm">₱ 100.00</p>
+                    <p class="text-sm text-gray-700 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat nihil repudiandae expedita alias praesentium adipisci numquam totam dicta animi tempora, unde aliquid qui error iure nesciunt nisi ut. Quasi.</p>
+                    <button class="bg-red-600 text-white px-2 py-1 rounded text-sm mt-2">Order Now</button>
+                </div>
+            </div>
+            <div class="col-span-1 bg-white shadow rounded">
+                <img src="images/foods/tofu-sisig.jpg" alt="" class="w-full h-64 object-cover rounded-t">
+                <div class="px-2.5 my-2.5">
+                    <h6 class="font-semibold text-lg">Tofu Sisig</h6>
+                    <p class="text-sm text-sm">₱ 100.00</p>
+                    <p class="text-sm text-gray-700 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat nihil repudiandae expedita alias praesentium adipisci numquam totam dicta animi tempora, unde aliquid qui error iure nesciunt nisi ut. Quasi.</p>
+                    <button class="bg-red-600 text-white px-2 py-1 rounded text-sm mt-2">Order Now</button>
+                </div>
+            </div>
+            <div class="col-span-1 bg-white shadow rounded">
+                <img src="images/foods/sari-saring-inihaw.jpg" alt="" class="w-full h-64 object-cover rounded-t">
+                <div class="px-2.5 my-2.5">
+                    <h6 class="font-semibold text-lg">Sari Saring Inihaw</h6>
+                    <p class="text-sm text-sm">₱ 100.00</p>
+                    <p class="text-sm text-gray-700 mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit fugiat nihil repudiandae expedita alias praesentium adipisci numquam totam dicta animi tempora, unde aliquid qui error iure nesciunt nisi ut. Quasi.</p>
+                    <button class="bg-red-600 text-white px-2 py-1 rounded text-sm mt-2">Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full border shadow p-3 bg-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-2.5">
+                <div class="col-span-1 p-3">
+                    <img src="images/logo_manongs_2018.png" class="w-32">
+                    <p class="text-xs font-semibold text-gray-500">©2024 Manong's Grill™ is a registered trademark. All Rights Reserved.</p>
+                </div>
+                <div class="col-span-1 p-3">
+                    <h2 class="font-semibold text-lg">Quick Links</h2>
+                    <ul class="text-sm space-y-1 font-semibold text-gray-500">
+                        <li>Home</li>
+                        <li>Foods</li>
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+
+        const items = document.querySelectorAll('.carousel-item');
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            items[currentIndex].classList.remove('opacity-100');
+            items[currentIndex].classList.add('opacity-0');
+
+            if (currentIndex === items.length - 1) {
+                currentIndex = 0;
+            } else {
+                currentIndex++;
+            }
+
+            items[currentIndex].classList.remove('opacity-0');
+            items[currentIndex].classList.add('opacity-100');
+        }
+
+        setInterval(showNextSlide, 3000);
+    </script>
+</body>
+</html>
